@@ -5,7 +5,6 @@ This project contains a **Vulnerability Assessment and Penetration Testing (VAPT
 
 ## 📂 Files Included: 
 - **commands.txt** → A text file containing all necessary Kali Linux commands for VAPT.<br />
-- **README.md** → Documentation on how to use the commands.<br />
 
 ## 🔧 Tools Used:
 The following tools are used in the **VAPT process**:<br />
@@ -33,24 +32,24 @@ If you downloaded manually, move commands.txt to your Kali Linux system.<br />
 3. **Manually** execute each command step-by-step as per the testing requirements.<br />
 
 ## 📜 VAPT Steps (Covered in commands.txt):
-✅ 1. Reconnaissance (Information Gathering)<br />
-Scanning open ports and services using Nmap.<br />
+✅ 1. **Reconnaissance (Information Gathering)**:<br />
+- Scanning open ports and services using Nmap.<br />
 
-✅ 2. Web Server and Application Scanning<br />
-Running Nikto for web server vulnerabilities.<br />
-Scanning web applications using OWASP ZAP.<br />
+✅ 2. **Web Server and Application Scanning**:<br />
+- Running Nikto for web server vulnerabilities.<br />
+- Scanning web applications using OWASP ZAP.<br />
 
-✅ 3. Exploitation and Penetration Testing<br />
-Performing SQL Injection using SQLmap.<br />
-Exploiting vulnerabilities with Metasploit.<br />
-Brute-forcing login credentials using Hydra.<br />
+✅ 3. **Exploitation and Penetration Testing**:<br />
+- Performing SQL Injection using SQLmap.<br />
+- Exploiting vulnerabilities with Metasploit.<br />
+- Brute-forcing login credentials using Hydra.<br />
 
-✅ 4. Reporting and Mitigation<br />
-Documenting vulnerabilities and security fixes.<br />
+✅ 4. **Reporting and Mitigation:<br />
+- Documenting vulnerabilities and security fixes.<br />
 
 ## ⚠️ Disclaimer:
-🚨 This project is for educational purposes only. Do not test on unauthorized systems.<br />
-🔒 Always ensure you have proper legal permissions before conducting security assessments.<br />
+🚨 **This project is for Educational purposes only. Do not test on Unauthorized systems**.<br />
+🔒 **Always ensure you have proper legal permissions before conducting security assessments**.<br />
 
 ## 📢 Contribution:
 Feel free to contribute by adding new security testing techniques or improving the documentation!<br />
